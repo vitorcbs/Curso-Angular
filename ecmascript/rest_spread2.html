@@ -1,0 +1,33 @@
+<html>
+    <body>
+        <div id="teste"></div>
+        <script>
+        
+        // contexto rest = utilizado para condensar
+
+        // function soma (...param) {
+        //     let resultado = 0
+
+        //     param.forEach( v => resultado += v)
+
+        //     return resultado
+        // }
+
+        // let x = soma(5,2,1,6,7)
+        // console.log(`Resultado = ${x}`)
+
+        function multiplicacao(m, ...n) {
+            //console.log(m)
+            //console.log(n)
+            let resultado = 0
+            n.forEach(v => {console.log(m*v); resultado += m * v})
+
+            return resultado
+        }
+
+        y = multiplicacao(5, 7, 12, 13, 49)
+        console.log(`O resultado é ${y}`)
+
+        </script>
+    </body>
+</html>
