@@ -1,0 +1,28 @@
+<html>
+    <body>
+        <div id="teste"></div>
+        <script>
+           
+            //destructuring assigment no contexto de arrays
+
+            let frutas = ['Abacaxi', 'Uva', 'Pera', 'Mamão']
+            //let a = frutas[1]
+            //console.log(a)
+
+
+            //let [a, b] = frutas [a = abacaxi e b = uva]
+            let [a, b, c, d] = frutas
+
+
+            //default parameters
+            let [a1, b1 = 'Abacate', c1, d1, e = 'banana'] = frutas
+
+            
+            //destruturação dentro de outra destruturação
+            let coisas = [['Abacaxi', 'Uva', 'Pera', 'Mamão'],['Vitor', 'Nathalia']]
+            let [,[,x]] = coisas
+            console.log(x)
+
+        </script>
+    </body>
+</html>
