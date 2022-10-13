@@ -1,0 +1,19 @@
+<html>
+    <body>
+        <div id="teste"></div>
+        <script>
+         //destucturing com rest
+         
+            //array
+            let arr = [10, 20, 30, 40]
+            let [a, ...x] = arr   //a=10 e x = 20,30,40
+            console.log(a, x)
+
+
+            //objetos
+            let obj = {a:10, b:20, c:30, d:40}
+            let {c: h, ...resto} = obj
+            console.log(h, resto)
+        </script>
+    </body>
+</html>

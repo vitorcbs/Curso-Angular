@@ -1,0 +1,41 @@
+<html>
+    <body>
+        <div id="teste"></div>
+        <script>
+
+        //destructuring assingment em funcoes
+        let array = [10, 20, 30, 40]
+
+        function teste(a, b) {
+            console.log(a, b)
+        }
+
+        function teste1([a, b, ,c]) { //pulando valores precisa do [] - desestrutura arrays []
+            console.log(a, b, c)
+        }
+
+        function teste2([a, b, ,c, d = 100]) { //default parameters
+            console.log(a, b, c, d)
+        }
+
+        teste(array[0], array[1])
+        teste1(array)
+        teste2(array)
+
+        //objetos
+        let obj = {
+            a: 100,
+            b: 200,
+            c: 300, 
+            d: 400
+        }
+
+        function teste3({a, b: x, t = 500}) { //desestrutura objetos {}
+            console.log(a,x, t)
+        }
+
+        teste3(obj)
+
+        </script>
+    </body>
+</html>
